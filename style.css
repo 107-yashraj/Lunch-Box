@@ -5,7 +5,10 @@
     box-sizing: border-box;
  }
  /* global varibles */
-  
+ .nav-toggle{
+    display: none;
+    margin-right: 40px;
+}
 :root{
     --primary-text-color:#183b56;
     --secondary-text-color:#577592;
