@@ -1,19 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:ital,wght@1,500;1,700&display=swap');
+
 body{
-    background-color: white;
     padding: 40px;
-    font-family: 'Poppins','sans-serif';
-    line-height: 1.6rem;
+    font-family:'Electrolize','Poppins','sans-serif';
+    line-height: 1.5rem;
+    color: white;
+ text-decoration:wavy;
 }
+
+body {
+    overflow: visible !important;
+    background: -webkit-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
+    background: -moz-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
+    background: -ms-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
+    background: -o-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
+    background: linear-gradient(45deg, #085078 25%, #85d8ce 140%);
+   }
+  
+  
 h1{
     text-align:center;
     text-transform: capitalize;
 }
 .accordians{
     border: 1px solid #c3d6ec;
-    background-color: #F6FAFF;
+    background-color: whitesmoke;
     padding:4px 20px;
-    font-family: 'Poppins','sans-serif';
+    font-family:'Electrolize','Poppins','sans-serif';
     line-height: 1rem;
     margin:20px auto ;
     border-radius: 8px;
@@ -21,7 +35,8 @@ h1{
     width: 90%;
 }
 .question{
-    color: #1b1d24;
+    color: rgb(25, 22, 22);
+    font-size:larger;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,10 +46,10 @@ h1{
     transition: transform .2s;
 }
 .answer{
+    color: rgba(25, 22, 22, 0.755);
     height: 0;
+    
     overflow-x: scroll;
-
-    color: #333748e1;
     transition: height .5s ease-in-out;
 }
 
