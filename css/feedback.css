@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background:linear-gradient(to bottom left,rgba(103, 158, 173, 0.809),rgba(39, 150, 191, 0.691));
+}
+.outerbox{
+    width:100vw;
+    height: 100vh;
+}
+.innerbox{
+/* background-color: rgb(241, 245, 245); */
+width: 450px;
+height: 650px;
+margin:0 auto;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+padding: 20px 40px;
+background-color: rgba(29, 121, 146, 0);
+backdrop-filter: blur(80px);
+border-radius: 8px;
+box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.84);
+z-index:2;
+}
+.feedback h1{
+    font-size: 1.5rem;
+    color:#212121;
+    }
+    .feedback p{
+        font-size: 0.9rem;
+        color:#010000de;
+    }
+    .feedback-body{
+        margin:  20px 0px;
+    }
+    .feedback-body p{
+        margin: 8px 0px;;
+    }
+    .feedback-body label{
+       display: block; 
+    }
+    .feedback-body p input{
+        width: 100%;
+        padding:10px;
+        border: 2px solid #cccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+    .feedback-body p textarea{
+        width: 100%;
+        padding:10px;
+        border: 2px solid #cccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+    .feedback-body p input[type="submit"]{
+        background-color: #01000084;
+        border: none;
+        color: white;
+        cursor: pointer
+    }
+    .feedback-body p input[type="submit"]:hover{
+        background-color: #2a91ba;
+    }
+    .feedback-footer{
+        color:#212121;
+        text-align: center;
+    }
+    .foot{
+        margin-top: -13px;
+    }
+    .feedback-footer a:hover{
+        color: #212121;
+        text-decoration: none;
+    }
