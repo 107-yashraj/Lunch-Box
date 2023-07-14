@@ -4,9 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+	background: linear-gradient(45deg, #ee7652c2, #4d8fd6bc, #23a5d5e7, #23d5abdf);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 body{
     font-family: 'Lato', sans-serif;
-    background:linear-gradient(to bottom left,rgba(103, 158, 173, 0.809),rgba(39, 150, 191, 0.691));
+    /* background:linear-gradient(to bottom left,rgba(103, 158, 173, 0.809),rgba(39, 150, 191, 0.691)); */
 }
 .outerbox{
     width:100vw;
@@ -14,18 +33,19 @@ body{
 }
 .innerbox{
 /* background-color: rgb(241, 245, 245); */
-width: 450px;
-height: 650px;
+width: 350px;
+height: 75vh;
 margin:0 auto;
 position: relative;
 top: 50%;
 transform: translateY(-50%);
-padding: 20px 40px;
+padding: 5vh 40px;
 background-color: rgba(29, 121, 146, 0);
 backdrop-filter: blur(80px);
 border-radius: 8px;
 box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.84);
 z-index:2;
+overflow-x: scroll;
 }
 .feedback h1{
     font-size: 1.5rem;
@@ -46,6 +66,7 @@ z-index:2;
     }
     .feedback-body p input{
         width: 100%;
+        height: 6vh;
         padding:10px;
         border: 2px solid #cccc;
         border-radius: 4px;
@@ -54,6 +75,7 @@ z-index:2;
     }
     .feedback-body p textarea{
         width: 100%;
+       height: 10vh;
         padding:10px;
         border: 2px solid #cccc;
         border-radius: 4px;
@@ -67,7 +89,7 @@ z-index:2;
         cursor: pointer
     }
     .feedback-body p input[type="submit"]:hover{
-        background-color: #2a91ba;
+        background-color: #00a2e2;
     }
     .feedback-footer{
         color:#212121;
@@ -80,3 +102,4 @@ z-index:2;
         color: #212121;
         text-decoration: none;
     }
+   
