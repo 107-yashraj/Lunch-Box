@@ -28,7 +28,7 @@
         color: var(--secondary-text-color);
         line-height: 1.5rem;
     }
-    .header-right img{
+    .carousel-inner{
         width: 350px;
         border: .5px solid var(--primary-text-color);
         border-radius: 6px;
@@ -193,7 +193,7 @@
         width:50%;
         margin-top: 20px;
       }
-    .header-right img{
+      .carousel-inner{
         width: 100vw;
         border: .5px solid var(--primary-text-color);
         border-radius: 6px;
