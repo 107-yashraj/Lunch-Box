@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 body {
-	background: linear-gradient(45deg, #ee7652c2, #4d8fd6bc, #23a5d5e7, #23d5abdf);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	/* background: linear-gradient(to right, #261E5A, #9265CA80, #B8A1D9);
+	/* background-size: 400% 400%; */
+	/* animation: gradient 10s ease infinite;  */
 	height: 100vh;
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -21,39 +21,46 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 
 body{
     font-family: 'Lato', sans-serif;
     /* background:linear-gradient(to bottom left,rgba(103, 158, 173, 0.809),rgba(39, 150, 191, 0.691)); */
+    background-image: url('/assets/universe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 .outerbox{
     width:100vw;
     height: 100vh;
+   
 }
 .innerbox{
 /* background-color: rgb(241, 245, 245); */
 width: 350px;
 height: 75vh;
+color: whitesmoke;
 margin:0 auto;
 position: relative;
 top: 50%;
 transform: translateY(-50%);
 padding: 5vh 40px;
-background-color: rgba(29, 121, 146, 0);
+/* background-color: #261e5ad3; */
+background-color: #261e5a7c;
 backdrop-filter: blur(80px);
-border-radius: 8px;
-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.84);
+border-radius: 16px;
+border: 1px solid #DD946F;;
 z-index:2;
 overflow-x: scroll;
 }
 .feedback h1{
     font-size: 1.5rem;
-    color:#212121;
+    color:whitesmoke
     }
     .feedback p{
         font-size: 0.9rem;
-        color:#010000de;
+        color:white;
     }
     .feedback-body{
         margin:  20px 0px;
@@ -83,23 +90,31 @@ overflow-x: scroll;
         margin-top: 4px;
     }
     .feedback-body p input[type="submit"]{
-        background-color: #01000084;
+        background-color: #DD946F;
         border: none;
         color: white;
         cursor: pointer
     }
     .feedback-body p input[type="submit"]:hover{
-        background-color: #00a2e2;
+        background-color: #CD7D7C;
     }
     .feedback-footer{
-        color:#212121;
+        color:whitesmoke;
         text-align: center;
     }
     .foot{
         margin-top: -13px;
     }
+    .foot a{
+        color:#DD946F;
+    }
     .feedback-footer a:hover{
-        color: #212121;
+        color: white;
         text-decoration: none;
     }
    
+.astro{
+    position:absolute;
+    top: 20px;
+    right:60px;
+}

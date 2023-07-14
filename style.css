@@ -135,13 +135,13 @@ justify-content: space-between;
     gap: 40px;
 }
 .subnav{
-    margin:5px ;
+    margin-top:10px ;
     height: 0px;
     overflow: hidden;
     transition: 2s ease-in-out;
 }
 .open{
-    height: 100vh;
+    height: 80vh;
 }
 .subnav ul{ 
     margin-top: 10px;

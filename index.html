@@ -15,7 +15,7 @@
  <div class="top-banner">
     <div class="container">
         
-        <div class="small-bold-text banner-text">Lunch-Box | 😋Food That Reminds You Of Motherhood😋</div>
+        <div class="small-bold-text banner-text"> Lunch-Box| <span id="element"></span></div>
     </div>
      
  </div>
@@ -48,6 +48,7 @@
             <li><a href="#Pricing"class="hover-lins">Pricing <i class="fa-regular fa-money-bill-1"></i></a></li>
             <li><a href="#Kitchen-King" class="hover-lins">Kitchen-King <i class="fa-regular fa-paper-plane"></i></a></li>
             <li><a href="signup.html"class="hover-lins " >Registration <i class="fa-regular fa-handshake"></i></a></li>
+            <li><a href="#"class="hover-lins " >Developer <i class="fa-solid fa-laptop-code"></i></a></li>
         </ul>
     </div>
 </div>
@@ -70,13 +71,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/asset 10.jpeg" class="d-block w-100" alt="Image1">
+                    <img src="/assets/asset 10.jpeg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/product.jpg" class="d-block w-100" alt="Image2">
+                    <img src="/assets/product.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/papad-1-770x433.avif" class="d-block w-100" alt="Image3">
+                    <img src="/assets/papad-1-770x433.avif" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -97,7 +98,7 @@
 
 <section class="companies-section container">
     <p>||This Is The India's First Online Tiffin-Center Service||</p>
-    <a href="#" class="hover-lins companies">@Tagline: There’s No Place Like Home & There’s Nothing Like Mom’s Meals.</a><br>
+    <a href="#" class="hover-lins companies">@Tagline: There’s No Place Like Home & There’s Nothing Delicious Than Mom’s Meals.</a><br>
     <a href="#" class="companies hover-lins">@Powered By Lunch-Box</a>
     <div class="companies-logo">
         <a href="#" class="company-logo">
@@ -357,6 +358,16 @@
       icon[1].classList.toggle('hide');
         
     });
+   </script>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   <!-- Setup and start animation! -->
+   <script>
+     var typed = new Typed('#element', {
+       strings: ['😋Food That Reminds You Of Motherhood😋','😍There Is Nothing More Comforting Than A Home-Cooked Meal😍','😇Cooking Is An Art And Moms Are The Best Artists In The World😇'],
+       typeSpeed: 50,
+       loop:true
+     });
    </script>
 </body>
 </html>
