@@ -10,18 +10,18 @@ body{
 .outerbox{
     width:100vw;
     height: 100vh;
+    background-color:#9ac5e5
     /* background: linear-gradient(to top left,#2292a5,#63acc0d5); */
-    background: linear-gradient(to top right,#2a91ba,#4c90ad9c,rgba(113, 73, 146, 0.554));
+    /* background: linear-gradient(to top right,#2a91ba,#4c90ad9c,rgba(113, 73, 146, 0.554)); */
 }
 .innerbox{
     width: 350px;
-    height: 450px;
+    height: 550px;
     margin:0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     padding: 20px 40px;
-    background-color: rgba(200, 211, 214, 0.237);
     backdrop-filter: blur(80px);
     border-radius: 8px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.84);
@@ -53,7 +53,8 @@ color:#212121;
     margin-top: 4px;
 }
 .signup-body p input[type="submit"]{
-    background-color: #01000084;
+    /* background-color: #01000084; */
+    background-color: #21212194;
     border: none;
     color: white;
     cursor: pointer
@@ -83,4 +84,19 @@ color:#212121;
 .c2{
     bottom:60px;
     right: 70px;
+}
+.main img{
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: -4px;
+    left: 40px;
+
+}
+header img{
+    width: 120px;
+    position: absolute;
+    right: 30px;
+    top: 120px;
+
 }

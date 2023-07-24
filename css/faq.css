@@ -1,33 +1,36 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:ital,wght@1,500;1,700&display=swap');
-
 body{
     padding: 40px;
-    font-family:'Electrolize','Poppins','sans-serif';
     line-height: 1.5rem;
     color: white;
  text-decoration:wavy;
+ font-family: 'Rubik', sans-serif;
+ scroll-behavior: smooth;
 }
 
 body {
     overflow: visible !important;
-    background: -webkit-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
-    background: -moz-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
-    background: -ms-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
-    background: -o-linear-gradient(45deg, #085078 25%, #85d8ce 140%);
-    background: linear-gradient(45deg, #085078 25%, #85d8ce 140%);
+    background: -webkit-linear-gradient(45deg, #206991 25%, #85d8ce 140%);
+    background: -moz-linear-gradient(45deg, #206991 25%, #85d8ce 140%);
+    background: -ms-linear-gradient(45deg, #206991 25%, #85d8ce 140%);
+    background: -o-linear-gradient(45deg, #206991 25%, #85d8ce 140%);
+    background: linear-gradient(45deg, #206991 25%, #85d8ce 140%);
    }
   
   
 h1{
     text-align:center;
     text-transform: capitalize;
+    line-height: normal;
+}
+h1 span{
+   color: rgb(140 254 255);
 }
 .accordians{
     border: 1px solid #c3d6ec;
     background-color: whitesmoke;
     padding:4px 20px;
-    font-family:'Electrolize','Poppins','sans-serif';
+
     line-height: 1rem;
     margin:20px auto ;
     border-radius: 8px;
@@ -35,11 +38,14 @@ h1{
     width: 90%;
 }
 .question{
-    color: rgb(25, 22, 22);
-    font-size:larger;
+    color: rgba(25, 22, 22, 0.774);
+    font-size:18px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-family: 'Rubik', sans-serif;
+ font-weight: 400;
+ text-transform: capitalize;
 }
 .icon{
     margin-right: 30px;
@@ -48,7 +54,10 @@ h1{
 .answer{
     color: rgba(25, 22, 22, 0.755);
     height: 0;
-    
+    font-family: 'Rubik', sans-serif;
+ font-weight: 300;
+ text-transform: capitalize;
+ font-size: medium;
     overflow-x: scroll;
     transition: height .5s ease-in-out;
 }
@@ -62,4 +71,12 @@ h1{
 .container{
     max-width: 800px;
     margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width: 550px) {
+    .question{
+font-size: medium;
+    }
 }

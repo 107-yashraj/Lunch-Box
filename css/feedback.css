@@ -8,7 +8,12 @@ body {
 	/* background: linear-gradient(to right, #261E5A, #9265CA80, #B8A1D9);
 	/* background-size: 400% 400%; */
 	/* animation: gradient 10s ease infinite;  */
-	height: 100vh;
+    width:100vw;
+    height: 100vh;
+
+    background-image: url('universe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* @keyframes gradient {
@@ -26,14 +31,17 @@ body {
 body{
     font-family: 'Lato', sans-serif;
     /* background:linear-gradient(to bottom left,rgba(103, 158, 173, 0.809),rgba(39, 150, 191, 0.691)); */
-    background-image: url('../assets/universe.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+   
     
 }
 .outerbox{
+
     width:100vw;
     height: 100vh;
+
+    background-image: url('../assets/universe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
    
 }
 .innerbox{

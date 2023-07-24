@@ -21,6 +21,7 @@ body{
     /* background-color: #e8f1f3; */
     font-family: 'Poppins','sans-serif';
     color: var(--primary-text-color);
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -243,6 +244,7 @@ header{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    padding: 3px;
     border-style:solid .5px;
     border-left: none;
     border-right: none;
@@ -301,6 +303,7 @@ gap: 80px;
 .Kitchen-King{
     font-weight: 600;
     text-align: center;
+    padding: 5px;
     margin: 15px;
     box-shadow:7px 5px 4px  var(--secondary-text-color) ;
     border-bottom: .5px solid var(--primary-text-color);
@@ -373,9 +376,11 @@ gap: 80px;
     background-repeat: no-repeat;
     background-position: 80%;
     background-size: 40%; */
-    background-color:#e3ebed ;
+    /* background-color:#e3ebed ; */
+
     margin-top: 80px;
     margin-bottom: 80px;
+    
     justify-content: space-between;
     gap: 30px;
     background: linear-gradient(-45deg, #eae8e8cf,#f1efefcb,white);
@@ -410,4 +415,3 @@ gap: 80px;
 .hide{
     display: none;
 }
-
