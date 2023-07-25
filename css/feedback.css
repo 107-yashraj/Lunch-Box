@@ -4,74 +4,74 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-	/* background: linear-gradient(to right, #261E5A, #9265CA80, #B8A1D9);
-	/* background-size: 400% 400%; */
-	/* animation: gradient 10s ease infinite;  */
-    width:100vw;
-    height: 100vh;
-
-    background-image: url('universe.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
 
 body{
-    font-family: 'Lato', sans-serif;
-    /* background:linear-gradient(to bottom left,rgba(103, 158, 173, 0.809),rgba(39, 150, 191, 0.691)); */
-   
-    
+    font-family: 'Lato', sans-serif;  
 }
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 900px;
+    margin: 25px auto;
+
+}
+.sec{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
 .outerbox{
-
-    width:100vw;
-    height: 100vh;
-
-    background-image: url('../assets/universe.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-   
+    width:max-content;
+    height: max-content;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
+
+.content-box{
+    /* background-color: rgb(241, 245, 245); */
+    width: 450px;
+    height: 600px;
+    color: #000000;
+    overflow-x: scroll;
+    }
+    .content-box h1{
+        font-size: 45px;
+        font-weight: bolder;
+    }   
+    .content-box p{
+        margin: 15px 0px;
+    }   
+    .content-box img{
+        width:100% ;
+    }   
+
 .innerbox{
 /* background-color: rgb(241, 245, 245); */
+
 width: 350px;
-height: 75vh;
-color: whitesmoke;
-margin:0 auto;
-position: relative;
-top: 50%;
-transform: translateY(-50%);
-padding: 5vh 40px;
-/* background-color: #261e5ad3; */
-background-color: #261e5a7c;
-backdrop-filter: blur(80px);
-border-radius: 16px;
-border: 1px solid #DD946F;;
-z-index:2;
+height: 600px;
+color: #000000;
 overflow-x: scroll;
 }
 .feedback h1{
     font-size: 1.5rem;
-    color:whitesmoke
+    color: #000000;
     }
     .feedback p{
         font-size: 0.9rem;
-        color:white;
+        color: #000000;
     }
     .feedback-body{
-        margin:  20px 0px;
+        margin:  15px 0px;
     }
     .feedback-body p{
         margin: 8px 0px;;
@@ -81,48 +81,194 @@ overflow-x: scroll;
     }
     .feedback-body p input{
         width: 100%;
-        height: 6vh;
+        height: 40px;
         padding:10px;
-        border: 2px solid #cccc;
+        border: 2px solid #8c8c8c;
         border-radius: 4px;
         font-size: 1rem;
         margin-top: 4px;
     }
     .feedback-body p textarea{
         width: 100%;
-       height: 10vh;
+       height: 150px;
         padding:10px;
-        border: 2px solid #cccc;
+        border: 2px solid #8c8c8c;
         border-radius: 4px;
         font-size: 1rem;
         margin-top: 4px;
     }
     .feedback-body p input[type="submit"]{
-        background-color: #DD946F;
         border: none;
-        color: white;
-        cursor: pointer
+        background-color: #000000;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
     }
     .feedback-body p input[type="submit"]:hover{
-        background-color: #CD7D7C;
+        transform: scale(.8);
     }
     .feedback-footer{
-        color:whitesmoke;
+        color: #000000;
         text-align: center;
     }
     .foot{
         margin-top: -13px;
     }
     .foot a{
-        color:#DD946F;
+        color: #000000;
     }
     .feedback-footer a:hover{
-        color: white;
+        color: #6b63ff;
         text-decoration: none;
     }
    
-.astro{
-    position:absolute;
-    top: 20px;
-    right:60px;
+    @media screen and (min-width: 565px) and (max-width: 770px) 
+    {
+
+        .nav{
+            margin-top:25px 0px;
+            
+            width:100vw;
+            font-size: smaller;
+            display: flex;
+            justify-content: space-around;
+        }
+        .sec{
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            }
+
+
+.content-box{
+    /* background-color: rgb(241, 245, 245); */
+    width: 300px;
+    height: 480px;
+    color: #000000;
+    overflow-x: scroll;
+    }
+    .content-box h1{
+        font-size: 25px;
+        font-weight: bolder;
+    }   
+    .content-box p{
+        margin: 10px 0px;
+    }   
+    .content-box img{
+        width:100% ;
+    }   
+
+
+.innerbox{
+    /* background-color: rgb(241, 245, 245); */
+    
+    width: 250px;
+    height: 480px;
+    color: #000000;
+    overflow-x: scroll;
+    }
+ 
+    
+        .feedback-body{
+            margin:  10px 0px;
+        }
+        .feedback-body p{
+            margin: 5px 0px;;
+        }
+        .feedback-body label{
+           display: block; 
+        }
+        .feedback-body p input{
+            height: 40px;
+            padding:5px;
+        }
+        .feedback-body p textarea{
+           height: 75px;
+            padding:5px;
+        }
+   
+        .feedback-body p input[type="submit"]:hover{
+            transform: scale(.6);
+        }
+       
+        .outerbox{
+          margin: 15px auto;
+            width:max-content;
+            height: max-content;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+
+    @media screen and (max-width: 560px)
+    {
+.nav{
+    margin-top:25px;
+    margin-bottom: 15px;
+    width:100vw;
+    font-size: smaller;
+    display: flex;
+    justify-content: space-around;
 }
+.sec{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+        .outerbox{
+            margin: 30px auto;
+            width:max-content;
+            height: max-content;
+            display: flex;
+            justify-content: space-around;
+        }
+  
+.innerbox{
+    width: 350px;
+    height: 480px;
+    padding: 10px auto;
+    color: #000000;
+    overflow-x: scroll;
+    }
+ 
+    
+        .feedback-body{
+            margin:  15px 0px;
+        }
+        .feedback-body p{
+            margin: 5px 0px;;
+        }
+        .feedback-body label{
+           display: block; 
+        }
+        .feedback-body p input{
+            height: 40px;
+            padding:5px;
+        }
+        .feedback-body p textarea{
+           height: 90px;
+            padding:5px;
+        }
+   
+        .feedback-body p input[type="submit"]:hover{
+            transform: scale(.6);
+        }
+       
+        .outerbox{
+            width:max-content;
+            height: max-content;
+            display: flex;
+            justify-content: space-around;
+        }
+        .content-box{
+           display: none;
+        }
+            
+    }
